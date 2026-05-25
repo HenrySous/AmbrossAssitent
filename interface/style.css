@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background: #050505;
+    color: #00ff88;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+#orb {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #00ff88;
+    margin: auto;
+    box-shadow: 0 0 50px #00ff88;
+    animation: pulse 2s infinite;
+}
+
+.listening {
+    background: #00aaff !important;
+    box-shadow: 0 0 70px #00aaff !important;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
